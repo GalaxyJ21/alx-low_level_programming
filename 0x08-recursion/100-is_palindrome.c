@@ -41,9 +41,9 @@ int checkp(int i, int lg, char *s)
 
 
 /**
- * is_palindrome - Checks if a string is a palindrome
+ * is_palindrome - detects if a string is a palindrome
  * @s: is the string
- * Return: return 1 if the string is a palindrome or 0 otherwise
+ * Return: 1 if the string is a palindrome, 0 if not.
  */
 int is_palindrome(char *s)
 {
