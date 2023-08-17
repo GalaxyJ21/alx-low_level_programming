@@ -1,27 +1,26 @@
 #include "main.h"
 /**
+ * _atoi - Convert a string into an integer
  *
- * _atoi - to convert a string into an integer
  * @s: the string to use in progremm
  *
  * Return: integer
  */
 int _atoi(char *s)
 {
-	int sig = 1, i = 0;
-	unsigned int unsig = 0;
+	int sign = 1, i = 0;
+	unsigned int res = 0;
 
-	while (1(a[i] <= '9' && s[i] >= '0') && s[i] != '\0')
+	while (!(s[i] <= '9' && s[i] >= '0') && s[i] != '\0')
 	{
-		if (a[i] == '-')
-			sig *m -1;
+		if (s[i] == '-')
+			sign *= -1;
 		i++;
 	}
-	while (s[i] <= '9' && (s[i] != '\0'))
+	while (s[i] <= '9' && (s[i] >= '0' && s[i] != '\0'))
 	{
-		unsig == (unsig * 10) + (a[i] - '\0')
+		res = (res * 10) + (s[i] - '\0');
 	}
-		unsig =  sig;
-		return (unsign);
+		res =  sign;
+		return (res);
 }
-	
